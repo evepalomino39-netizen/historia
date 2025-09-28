@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Historia 💖</title>
+  
+  <!-- CSS interno -->
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body { 
+      font-family:'Arial', sans-serif; 
+      background: linear-gradient(to bottom, #f5deb3, #87ceeb); /* De arena a azul */
+      color:#333; 
+      line-height:1.6; 
+      overflow-x:hidden; 
+    }
+
+    .floats span { 
+      position: fixed; 
+      font-size: 2em; 
+      animation: float 10s infinite linear; 
+      top: 100%; 
+    }
+    .floats span:nth-child(1){ left:10%; animation-duration: 12s;}
+    .floats span:nth-child(2){ left:30%; animation-duration: 10s;}
+    .floats span:nth-child(3){ left:50%; animation-duration: 14s;}
+    .floats span:nth-child(4){ left:70%; animation-duration: 11s;}
+    .floats span:nth-child(5){ left:90%; animation-duration: 13s;}
+    @keyframes float {0%{transform: translateY(0);}100%{transform: translateY(-120vh);} }
+
+    header { text-align:center; padding:30px 20px; background-color:#4682b4; color:white; box-shadow:0 2px 5px rgba(0,0,0,0.1); position: sticky; top:0; z-index:10;}
+    header h1 {margin-bottom:10px;}
+    header p {font-style:italic;}
+
+    section { max-width:800px; margin:30px auto; padding:20px; background:white; border-radius:12px; box-shadow:0 3px 8px rgba(0,0,0,0.1);}
+    h2 {color:#4682b4; margin-bottom:15px;}
+
+    .viñetas { list-style:none; padding-left:0;}
+    .viñetas li { position: relative; padding-left:30px; margin-bottom:15px; font-size:1.1em; }
+    .viñetas li::before { content:"💖"; position:absolute; left:0; top:0; }
+
+    .imagen-final { text-align:center; margin-top:20px; }
+    .imagen-final img { 
+      width:300px;   /* Ancho fijo de 300px */
+      height:auto;   /* Mantiene proporción */
+      border-radius:12px; 
+      box-shadow:0 3px 8px rgba(0,0,0,0.2);
+    }
+    .imagen-final p { margin-top:8px; font-style:italic; color:#555; }
+
+    footer { text-align:center; padding:15px; background-color:#4682b4; color:white; margin-top:20px; border-top-left-radius:12px; border-top-right-radius:12px; }
+
+    .fade { opacity:0; transform:translateY(30px); transition: all 1s ease-out; }
+    .fade.appear { opacity:1; transform:translateY(0); }
+
+    @media (max-width: 500px) {
+      .imagen-final img {
+        width:80%;   /* Ajuste para móviles */
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Música -->
+  <audio loop>
+    <source src="musica/musica_romantica.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+ 
+ 
+
+  <!-- Corazones flotantes -->
+  <div class="floats">
+    <span>💖</span>
+    <span>💖</span>
+    <span>💖</span>
+    <span>💖</span>
+    <span>💖</span>
+  </div>
+
+  <header>
+    <h1>Nuestra Historia</h1>
+    <p>Un año juntos lleno de emociones y sorpresas ✨</p>
+  </header>
+
+  <section id="historia">
+
+    <h2 class="fade">El Comienzo</h2>
+    <ul class="viñetas fade">
+      <li>Un día de la nada, viendo videos en TikTok, me llegó una solicitud.</li>
+      <li>Por curiosidad, acepté la solicitud y era <strong>Isaias Constantino</strong>.</li>
+      <li>Después me llegó un mensaje suyo diciendo: "Hola, ¿cómo estás?"</li>
+    </ul>
+    <div class="imagen-final fade">
+      <img src="imagene/tiktok1.jpg" alt="TikTok">
+      <img src="imagene/tiktok2.jpg" alt="TikTok">
+      <p>Una de las primeras fotos que nos mandamos ambos 💖</p>
+    </div>
+
+    <h2 class="fade">Nuestra Conexión</h2>
+    <ul class="viñetas fade">
+      <li>Comenzamos a platicar durante varios días.</li>
+      <li>A veces no terminábamos las conversaciones, pero eso no importaba.</li>
+      <li>Finalmente, nos agregamos en WhatsApp y seguíamos conociéndonos.</li>
+    </ul>
+   
+    <h2 class="fade">El Gran Momento</h2>
+    <ul class="viñetas fade">
+      <li>El 28 de septiembre de 2024, llegaron unas flores muy bonitas.</li>
+      <li>Oh sorpresa, eran del <strong>amor de mi vida</strong>.</li>
+      <li>Ese momento estuvo lleno de emociones intensas.</li>
+    </ul>
+    <div class="imagen-final fade">
+      <img src="imagene/flores1.jpg" alt="Flores">
+      <img src="imagene/flores2.jpg" alt="Flores">
+
+      <p>Las flores más lindas que recibí 💐</p>
+    </div>
+
+    <h2 class="fade">Hoy</h2>
+    <ul class="viñetas fade">
+      <li>Desde ese momento supe que <strong>Isaias</strong> era el amor de mi vida.</li>
+      <li>Ahora llevamos un año juntos de manera virtual y apesar de la distancia mi amor por ti no desvanece ❤️</li>
+    </ul>
+    <div class="imagen-final fade">
+      <img src="imagene/aniversario1.jpg" alt="Aniversario">
+      <p>Celebrando nuestro primer año juntos virtualmente 🎉</p>
+    </div>
+       <p>Estas fotos sean recuerdO de que proto estaremos juntos y mirarlas queden como el bonito recuerdo que superamos mas que la distancia, y soportamos mas que el tiempo, con mucho cariño gracias por hacerme tan feliz, TE AMO MI ISAIAS MI AMOR ❤️</p>
+
+    </ul>
+ <div class="imagen-final fade">
+           <img src="imagene/recuerdo2.jpg" alt="Recuerdo">
+
+      <p>Ame tanto❤️ </p>
+    </div>
+
+<div class="imagen-final fade">
+           <img src="imagene/tarea1.jpg" alt="Tarea">
+
+      <p>Lo que el amor hace que hasta me ayudaste con mi tarea❤️ </p>
+    </div>
+<div class="imagen-final fade">
+           <img src="imagene/flor2.webp" alt="Flor">
+
+      <p>Me emociona tanto cuando llegan las flores, que las intento cuidar lo mas que pueda❤️ </p>
+    </div>
+<div class="imagen-final fade">
+           <img src="imagene/pantalla1.png" alt="Pantalla">
+
+      <p>Nunca te diste cuenta jajjaja pero es divertido igual tenerlo los dos nos vemos chistosos</p>
+    </div>
+
+<div class="imagen-final fade">
+           <img src="imagene/flor3.jpg" alt="Flor">
+
+      <p>De verdad me encantaron mucho las ame demaciado❤️ </p>
+    </div>
+<div class="imagen-final fade">
+           <img src="imagene/pantalla4.png" alt="Pantalla">
+
+      <p>Otra captura jajaj❤️ </p>
+    </div>
+
+
+<div class="imagen-final fade">
+           <img src="imagene/flor4.jpg" alt="Flor">
+
+      <p>Estas ultimas flores no pense que me las dieras me sorprendiste mucho cuando me las mencionaste❤️ </p>
+
+    </div>
+<div class="imagen-final fade">
+           <img src="imagene/captura4.png" alt="Captura">
+
+      <p>Se que los dos nos necesitamos abrazar y solo nos toca a distancia pronto esa foto se volvera realidad❤️ </p>
+
+    </div>
+
+
+   </section>
+
+  <footer>
+    <p>© 2025 Nuestra Historia</p>
+  </footer>
+
+  <script>
+    // Animación al hacer scroll
+    const faders = document.querySelectorAll('.fade');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+// Música al clic
+    document.body.addEventListener('click', () => {
+      const audio = document.querySelector('audio');
+      audio.play();
+    }, { once: true });
+
+
+  </script>
+
+</body>
+</html>
